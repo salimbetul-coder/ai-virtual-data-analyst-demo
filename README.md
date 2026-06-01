@@ -92,6 +92,7 @@ Python 3.12 · Streamlit · pandas · openpyxl · fpdf2 · DejaVu Sans
 
 ## Daha fazla
 
+- **Deploy rehberi (Streamlit Cloud, adım adım):** [DEPLOYMENT.md](DEPLOYMENT.md)
 - **Test rehberi (3 test verisi, beklenen metrikler, UI akışı):** [TESTING.md](TESTING.md)
 - **Müşteri/demo sunumu checklist'i:** [DEMO_CHECKLIST.md](DEMO_CHECKLIST.md)
 - **Sürüm geçmişi (v1 → v14):** [PROJECT_HISTORY.md](PROJECT_HISTORY.md)
