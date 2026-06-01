@@ -1,10 +1,28 @@
+# Secrets — must never be committed, zipped, or shared
 .env
+.env.*
+!.env.example
+
+# Python
 __pycache__/
 *.pyc
-.column_mappings.json
+*.pyo
+*.egg-info/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Runtime artifacts — regenerated on each analysis run
 output/
+.column_mappings.json
 
 # Temporary download artifacts
 dejavu.zip
+*.bak
