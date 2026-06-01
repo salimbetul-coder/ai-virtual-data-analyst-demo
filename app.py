@@ -141,7 +141,7 @@ def render_kpi_card(label: str, value: str, note: str = ""):
 
 def render_status_box():
     if REPORT_V5_PATH.exists() and JSON_PATH.exists():
-        st.success("Hazır demo raporu bulundu. Yeni Excel yükleyip analizi yeniden çalıştırabilirsin.")
+        st.success("Şu anda örnek veri ile hazırlanmış demo raporu görüyorsun. Kendi Excel'ini yükleyip yeniden analiz edebilirsin.")
     else:
         st.info("Henüz rapor oluşmadı. Excel dosyası yükleyip Analiz Et butonuna bas.")
 
@@ -316,7 +316,7 @@ with left_col:
             with open(EXCEL_PATH, "wb") as file:
                 file.write(file_bytes)
 
-            st.success(f"Dosya doğrulandı ve yüklendi: {EXCEL_PATH.name}")
+            st.success("Dosya doğrulandı ve analiz için kaydedildi.")
 
             with st.expander("Yüklenen dosya önizlemesi"):
                 st.dataframe(preview_df.head(5), use_container_width=True)
@@ -330,7 +330,7 @@ with left_col:
 
             else:
                 st.info(
-                    "v11 kolon eşleştirme ekranı aktif. "
+                    "Kolon eşleştirme ekranı aktif. "
                     "Aşağıda sistem alanlarını Excel dosyandaki kolonlarla eşleştirebilirsin."
                 )
 
@@ -422,7 +422,7 @@ with right_col:
 
     st.markdown(
         """
-        Bu buton şu işlemleri yapar:
+        Analiz Et butonuna basınca:
 
         1. Excel verisini analiz eder.  
         2. Veri kalite sorunlarını çıkarır.  
@@ -447,7 +447,7 @@ with right_col:
             with st.spinner("Python analiz motoru çalışıyor..."):
                 success, output, analysis_result = run_function_with_logs(run_sales_analysis)
 
-            with st.expander("Geliştirici logları - Analiz"):
+            with st.expander("İşlem detayı (analiz motoru)"):
                 st.code(output)
 
             if not success:
@@ -457,7 +457,7 @@ with right_col:
             with st.spinner("AI yönetici yorumu oluşturuluyor..."):
                 success, output, ai_summary_result = run_function_with_logs(generate_ai_summary)
 
-            with st.expander("Geliştirici logları - AI yorum"):
+            with st.expander("İşlem detayı (AI yorum)"):
                 st.code(output)
 
             if not success:
@@ -653,7 +653,7 @@ st.divider()
 with st.expander("Bu demo ne yapıyor?"):
     st.markdown(
         """
-Bu demo, BI ekibi olmayan küçük/orta ölçekli şirketler için tasarlanmış AI destekli sanal veri analisti MVP'sidir.
+Bu demo, BI ekibi olmayan küçük/orta ölçekli şirketler için tasarlanmış AI destekli sanal veri analisti uygulamasıdır.
 
 Akış:
 

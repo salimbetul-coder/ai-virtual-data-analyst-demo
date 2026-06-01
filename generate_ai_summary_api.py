@@ -1,3 +1,21 @@
+"""
+v15 için ayrılmış OpenAI API entegrasyon dosyası — şu an AKTİF DEĞİL.
+
+Deploy edilen demo (ai-virtual-data-analyst.streamlit.app) yönetici yorumunu
+tamamen lokal AI-like summary ile üretir; bunun için bkz: generate_ai_summary.py.
+
+Bu dosya app.py veya başka hiçbir aktif modül tarafından import edilmez.
+Müşteri pilotu / ücretli kullanım sinyali alındığında ve OPENAI_API_KEY
+güvenli bir şekilde (Streamlit Secrets üzerinden) sağlandığında v15 sürümünde
+aktive edilecektir.
+
+Aktive etmeden önce kontrol listesi:
+    - requirements.txt'e `python-dotenv` ve `openai` ekle
+    - Streamlit Cloud Secrets'a `OPENAI_API_KEY` koy (.env değil)
+    - app.py'da bu modülün kullanımını ekle (UI tarafında seçim)
+    - Token maliyeti ve rate-limit kontrolü ekle
+"""
+
 from pathlib import Path
 import os
 
