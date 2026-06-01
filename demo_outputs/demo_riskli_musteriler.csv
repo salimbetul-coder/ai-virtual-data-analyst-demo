@@ -1,0 +1,22 @@
+﻿Müşteri,Risk Tipi,Önerilen Aksiyon,Risk Skoru,Öncelik
+Nova Teknoloji,Geciken ödeme + Durum/ödeme tutarsızlığı + Anormal yüksek satış,Tahsilat takip listesine alınmalı; kayıt satış veya finans ekibi tarafından kontrol edilmeli; gerçek satışsa stratejik müşteri olarak takip edilmeli; hataysa düzeltilmeli.,11,Yüksek
+Mira Perakende,Geciken ödeme + Negatif satış tutarı,Tahsilat takip listesine alınmalı; finans/muhasebe ekibi bu kaydı doğrulamalı.,7,Yüksek
+Eksen Otomotiv,Eksik satış tutarı + Geciken ödeme,Tutar bilgisi tamamlanmadan rapor hesaplamasına güvenilmemeli; tahsilat takip listesine alınmalı.,6,Yüksek
+Star Medya,Geciken ödeme + Hatalı tarih,Tahsilat takip listesine alınmalı; tarih düzeltilmeden dönemsel analiz yapılmamalı.,5,Yüksek
+Akdeniz Turizm,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Atlas Holding,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Bora Enerji,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Delta İnşaat,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Ege Kozmetik,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Kare Mobilya,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Kuzey Market,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Lima Gıda,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Mavi Lojistik,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Mega Grup,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Orion Yazılım,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Pera Tekstil,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Rota Eğitim,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Safir Medikal,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Vera Danışmanlık,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+Zen Yapı,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük
+İnci Sağlık,Geciken ödeme,Tahsilat takip listesine alınmalı.,2,Düşük

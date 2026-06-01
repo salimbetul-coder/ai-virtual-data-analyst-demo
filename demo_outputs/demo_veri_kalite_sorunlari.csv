@@ -1,0 +1,9 @@
+﻿Satır,Müşteri,Problem,Mevcut Değer,Önerilen Aksiyon
+17,Eksen Otomotiv,Eksik satış tutarı,Eksik değer,Satış tutarı tamamlanmalı.
+44,Kare Mobilya,Eksik bölge,Eksik değer,Bölge bilgisi tamamlanmalı.
+80,Nova Teknoloji,Eksik satış temsilcisi,Eksik değer,Satış temsilcisi bilgisi tamamlanmalı.
+122,Star Medya,Hatalı tarih,2026-14-20,Tarih formatı kontrol edilmeli.
+157,Mira Perakende,Negatif satış tutarı,-25.000,Bu kayıt iade mi yoksa veri hatası mı kontrol edilmeli.
+212,Delta İnşaat,Standart dışı durum değeri,Tamamlandı,"Durum alanı Kazanıldı, Beklemede veya Kaybedildi değerlerinden biri olmalı."
+262,Nova Teknoloji,Durum/ödeme tutarsızlığı,"Durum=Kaybedildi, Ödeme Durumu=Ödendi",Satış kaydı ve ödeme durumu birlikte doğrulanmalı.
+322,Nova Teknoloji,Anormal yüksek satış,1.500.000,Bu satış gerçek mi yoksa veri girişi hatası mı kontrol edilmeli.

@@ -1,0 +1,328 @@
+{
+  "version": "v10.3",
+  "source_file": "Sales Demo Data.xlsx",
+  "summary": {
+    "total_sales": 67700256.0,
+    "total_sales_formatted": "67.700.256 TL",
+    "won_sales_total": 22744126.0,
+    "won_sales_total_formatted": "22.744.126 TL",
+    "pending_sales_count": 163,
+    "lost_sales_count": 175,
+    "top_region": "Antalya",
+    "top_product": "Paket C",
+    "top_sales_rep": "Burak"
+  },
+  "data_quality": {
+    "issue_count": 8,
+    "issues": [
+      {
+        "Satır": 17,
+        "Müşteri": "Eksen Otomotiv",
+        "Problem": "Eksik satış tutarı",
+        "Mevcut Değer": "Eksik değer",
+        "Önerilen Aksiyon": "Satış tutarı tamamlanmalı."
+      },
+      {
+        "Satır": 44,
+        "Müşteri": "Kare Mobilya",
+        "Problem": "Eksik bölge",
+        "Mevcut Değer": "Eksik değer",
+        "Önerilen Aksiyon": "Bölge bilgisi tamamlanmalı."
+      },
+      {
+        "Satır": 80,
+        "Müşteri": "Nova Teknoloji",
+        "Problem": "Eksik satış temsilcisi",
+        "Mevcut Değer": "Eksik değer",
+        "Önerilen Aksiyon": "Satış temsilcisi bilgisi tamamlanmalı."
+      },
+      {
+        "Satır": 122,
+        "Müşteri": "Star Medya",
+        "Problem": "Hatalı tarih",
+        "Mevcut Değer": "2026-14-20",
+        "Önerilen Aksiyon": "Tarih formatı kontrol edilmeli."
+      },
+      {
+        "Satır": 157,
+        "Müşteri": "Mira Perakende",
+        "Problem": "Negatif satış tutarı",
+        "Mevcut Değer": "-25.000",
+        "Önerilen Aksiyon": "Bu kayıt iade mi yoksa veri hatası mı kontrol edilmeli."
+      },
+      {
+        "Satır": 212,
+        "Müşteri": "Delta İnşaat",
+        "Problem": "Standart dışı durum değeri",
+        "Mevcut Değer": "Tamamlandı",
+        "Önerilen Aksiyon": "Durum alanı Kazanıldı, Beklemede veya Kaybedildi değerlerinden biri olmalı."
+      },
+      {
+        "Satır": 262,
+        "Müşteri": "Nova Teknoloji",
+        "Problem": "Durum/ödeme tutarsızlığı",
+        "Mevcut Değer": "Durum=Kaybedildi, Ödeme Durumu=Ödendi",
+        "Önerilen Aksiyon": "Satış kaydı ve ödeme durumu birlikte doğrulanmalı."
+      },
+      {
+        "Satır": 322,
+        "Müşteri": "Nova Teknoloji",
+        "Problem": "Anormal yüksek satış",
+        "Mevcut Değer": "1.500.000",
+        "Önerilen Aksiyon": "Bu satış gerçek mi yoksa veri girişi hatası mı kontrol edilmeli."
+      }
+    ]
+  },
+  "risks": {
+    "risk_customer_count": 21,
+    "customers": [
+      {
+        "Müşteri": "Nova Teknoloji",
+        "Risk Tipi": "Geciken ödeme + Durum/ödeme tutarsızlığı + Anormal yüksek satış",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı; kayıt satış veya finans ekibi tarafından kontrol edilmeli; gerçek satışsa stratejik müşteri olarak takip edilmeli; hataysa düzeltilmeli.",
+        "Risk Skoru": 11,
+        "Öncelik": "Yüksek"
+      },
+      {
+        "Müşteri": "Mira Perakende",
+        "Risk Tipi": "Geciken ödeme + Negatif satış tutarı",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı; finans/muhasebe ekibi bu kaydı doğrulamalı.",
+        "Risk Skoru": 7,
+        "Öncelik": "Yüksek"
+      },
+      {
+        "Müşteri": "Eksen Otomotiv",
+        "Risk Tipi": "Eksik satış tutarı + Geciken ödeme",
+        "Önerilen Aksiyon": "Tutar bilgisi tamamlanmadan rapor hesaplamasına güvenilmemeli; tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 6,
+        "Öncelik": "Yüksek"
+      },
+      {
+        "Müşteri": "Star Medya",
+        "Risk Tipi": "Geciken ödeme + Hatalı tarih",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı; tarih düzeltilmeden dönemsel analiz yapılmamalı.",
+        "Risk Skoru": 5,
+        "Öncelik": "Yüksek"
+      },
+      {
+        "Müşteri": "Akdeniz Turizm",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Atlas Holding",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Bora Enerji",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Delta İnşaat",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Ege Kozmetik",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Kare Mobilya",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Kuzey Market",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Lima Gıda",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Mavi Lojistik",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Mega Grup",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Orion Yazılım",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Pera Tekstil",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Rota Eğitim",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Safir Medikal",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Vera Danışmanlık",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "Zen Yapı",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      },
+      {
+        "Müşteri": "İnci Sağlık",
+        "Risk Tipi": "Geciken ödeme",
+        "Önerilen Aksiyon": "Tahsilat takip listesine alınmalı.",
+        "Risk Skoru": 2,
+        "Öncelik": "Düşük"
+      }
+    ]
+  },
+  "sales_breakdowns": {
+    "by_region": [
+      {
+        "region": "Antalya",
+        "sales_amount": 14420409.0,
+        "sales_amount_formatted": "14.420.409 TL"
+      },
+      {
+        "region": "Ankara",
+        "sales_amount": 11777147.0,
+        "sales_amount_formatted": "11.777.147 TL"
+      },
+      {
+        "region": "İstanbul",
+        "sales_amount": 11311584.0,
+        "sales_amount_formatted": "11.311.584 TL"
+      },
+      {
+        "region": "Bursa",
+        "sales_amount": 10311814.0,
+        "sales_amount_formatted": "10.311.814 TL"
+      },
+      {
+        "region": "İzmir",
+        "sales_amount": 10139884.0,
+        "sales_amount_formatted": "10.139.884 TL"
+      },
+      {
+        "region": "Konya",
+        "sales_amount": 9681895.0,
+        "sales_amount_formatted": "9.681.895 TL"
+      },
+      {
+        "region": "Bölge eksik",
+        "sales_amount": 57523.0,
+        "sales_amount_formatted": "57.523 TL"
+      }
+    ],
+    "by_product": [
+      {
+        "product": "Paket C",
+        "sales_amount": 26129817.0,
+        "sales_amount_formatted": "26.129.817 TL"
+      },
+      {
+        "product": "Paket B",
+        "sales_amount": 21895718.0,
+        "sales_amount_formatted": "21.895.718 TL"
+      },
+      {
+        "product": "Paket A",
+        "sales_amount": 19674721.0,
+        "sales_amount_formatted": "19.674.721 TL"
+      }
+    ],
+    "by_sales_rep": [
+      {
+        "sales_rep": "Burak",
+        "sales_amount": 12540179.0,
+        "sales_amount_formatted": "12.540.179 TL"
+      },
+      {
+        "sales_rep": "Ayşe",
+        "sales_amount": 12006864.0,
+        "sales_amount_formatted": "12.006.864 TL"
+      },
+      {
+        "sales_rep": "Zeynep",
+        "sales_amount": 11839642.0,
+        "sales_amount_formatted": "11.839.642 TL"
+      },
+      {
+        "sales_rep": "Can",
+        "sales_amount": 11701238.0,
+        "sales_amount_formatted": "11.701.238 TL"
+      },
+      {
+        "sales_rep": "Elif",
+        "sales_amount": 10631415.0,
+        "sales_amount_formatted": "10.631.415 TL"
+      },
+      {
+        "sales_rep": "Mehmet",
+        "sales_amount": 8951483.0,
+        "sales_amount_formatted": "8.951.483 TL"
+      },
+      {
+        "sales_rep": "Satış temsilcisi eksik",
+        "sales_amount": 29435.0,
+        "sales_amount_formatted": "29.435 TL"
+      }
+    ]
+  },
+  "recommendations": [
+    "Eksik, negatif ve hatalı tarih içeren kayıtlar düzeltilmeden nihai rapor kullanılmamalı.",
+    "Geciken ödemeler için tahsilat takip listesi oluşturulmalı.",
+    "Anormal yüksek satışlar gerçek mi veri hatası mı kontrol edilmeli.",
+    "Beklemede olan satışlar için satış temsilcileri hızlı takip yapmalı.",
+    "Durum alanı Kazanıldı, Beklemede, Kaybedildi değerleriyle standartlaştırılmalı."
+  ]
+}

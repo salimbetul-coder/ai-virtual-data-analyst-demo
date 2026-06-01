@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.column_mappings.json
+
+# Runtime artifacts — regenerated on each analysis run
+output/
+
+# Temporary download artifacts
+dejavu.zip
